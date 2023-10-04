@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT5</title>
+</head>
+<body>
+<script>
+    let a = [];
+    let x = +prompt("Nhập số phần tử: ");
+    let count = 0;
+    for (let i = 0; i < x; i++) {
+        a[i] = +prompt("nhập số thứ " + i);
+    }
+    for (let i = 0; i < x; i++) {
+        if (a[i] < 0) {
+            count++;
+        }
+    }
+    document.write("Số phần tử có số nguyên nhỏ hơn 0: " + count);
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT6</title>
+</head>
+<body>
+<script>
+    let a = [];
+    let x = +prompt("Nhập số phần tử: ");
+    for (let i = 0; i < x; i++) {
+        a[i] = +prompt("nhập số thứ " + i);
+    }
+    let y = +prompt("Nhập số nguyên V: ");
+    //tìm số nguyên trong mảng
+    let p;
+    for (let i = 0; i < x; i++) {
+        if (a[i] == y) {
+            p = i;
+        }
+    }
+    if (p == undefined) {
+        document.write("Không tìm thấy");
+    } else {
+        document.write("Tìm thấy trong mảng ở vị trí: " + p);
+    }
+</script>
+</body>
+</html>

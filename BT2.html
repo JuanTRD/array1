@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT2</title>
+</head>
+<body>
+<script>
+    let a = [];
+    let x = +prompt("Nhập số phần tử: ");
+    for (let i = 0; i < x; i++) {
+        a[i] = +prompt("nhập số thứ " + i);
+    }
+    let max = a[0];
+    let p;
+    for (let i = 0; i < x; i++) {
+        if (a[i] > max) {
+            max = a[i];
+            p = i;
+        }
+    }
+    document.write("số lớn nhất là :" + max + " ở vị trí " + p + " của mảng");
+</script>
+</body>
+</html>

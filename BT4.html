@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT4</title>
+</head>
+<body>
+Bài 4- Viết chương trình khởi tạo/nhập vào một mảng số nguyên
+và đảo ngược các phần tử trong mảng đó.<br />
+
+<script>
+    let a = [];
+    let x = +prompt("Nhập số phần tử: ");
+    for (let i = 0; i < x; i++) {
+        a[i] = +prompt("nhập số thứ " + i);
+    }
+    document.write("Before reverse :" + a + "<br />");
+    let first = 0;
+    let last = a.length - 1;
+    while (first < last) {
+        let temp = a[first];
+        a[first] = a[last];
+        a[last] = temp;
+        first++;
+        last--;
+    }
+    document.write("After reverse :" + a + "<br />");
+</script>
+</body>
+</html>
